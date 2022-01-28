@@ -1,4 +1,4 @@
-# 💹 Downtime
+# 💹 Downtime Page!
 Simple Status Page/Response Time Site
 
 ---
