@@ -9,6 +9,8 @@ Simple Status Page/Response Time Site
 ## 🚥 Current status
 
 <!-- <downtime-status> -->
-![Main Site](/status/diswidgets.org-443.svg)
-![Beta Site](/status/beta.diswidgets.org-443.svg)
+![Main Site](/status/toxicdev.me-443.svg)
+![Docs Site](/status/help.toxicdev.me-443.svg)
+![My Code Bin](/status/source.toxicdev.me-443.svg)
+![My API](/status/api.toxicdev.me-443.svg)
 <!-- <downtime-status/> -->
