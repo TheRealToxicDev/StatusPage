@@ -3,17 +3,19 @@
 # "title" will be displayed as "human name" instead of "name" if specified
 # All defaults values can be overriden per host basis
 hosts:
-  # Example / test root domain
-  - name: diswidgets.org
+  - name: toxicdev.me
     title: Main Site
-  # Example / test url
-  - name: beta.diswidgets.org
-    title: Beta Site
+  - name: help.toxicdev.me
+    title: Docs Site
+  - name: source.toxicdev.me
+    title: My Code Bin
+  - name: api.toxicdev.me
+    title: My API
 
 # Site configuration
 site:
   # Title
-  title: DisWidgets Response Time
+  title: Toxic Response Time
   # Favicon / logo
   favicon: https://beta.diswidgets.org/logo.png
   # Refresh rate of status images for client
