@@ -1,4 +1,10 @@
 # 💹 Downtime
+Simple Status Page/Response Time Site
+
+---
+
+## Self Hosting
+- View the [Usage](./USAGE.md) info
 
 ## 🚥 Current status
 
