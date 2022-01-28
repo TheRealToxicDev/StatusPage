@@ -13,7 +13,7 @@ hosts:
 # Site configuration
 site:
   # Title
-  title: Downtime
+  title: DisWidgets Response Time
   # Favicon / logo
   favicon: https://beta.diswidgets.org/logo.png
   # Refresh rate of status images for client
