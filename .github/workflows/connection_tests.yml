@@ -1,0 +1,39 @@
+name: Connection tests
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  connection-tests:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup
+        uses: denolib/setup-deno@v2
+
+      - name: Additional setup
+        run: |
+          sudo apt-get install nmap
+          sudo npm -g install svgo
+          git config --local user.email "null@github.com"
+          git config --local user.name "GitHub Action"
+
+      - name: Perform connection tests
+        run: deno run --allow-net --allow-read --allow-write --allow-run --unstable source/tests.ts
+
+      - name: Optimize and commit results
+        run: |
+          npx svgo --multipass -f status
+          git add static/site hosts status README.md
+          git commit -m "Update connection status"
+          git push
